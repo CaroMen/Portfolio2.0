@@ -7,12 +7,12 @@ import GlobalStyle from './globalStyles';
 function App() {
   return (
     <Router>
-      <GlobalStyle></GlobalStyle>
       <Navbar></Navbar>
       <Switch>
         <Route path='/' exact component={Home} />
       </Switch>
       <Footer />
+      <GlobalStyle></GlobalStyle>
     </Router>
   );
 }
