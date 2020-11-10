@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { DiPython, DiJavascript1 } from 'react-icons/di';
+import { MdKeyboardArrowRight } from "react-icons/md";
+
 // import { Link } from 'react-router-dom';
 
 export const InfoSec = styled.div`
@@ -14,6 +16,10 @@ margin: 0 -15px -15px -15px;
 flex-wrap: wrap;
 align-items: center;
 flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
+
+@media screen and (max-width: 768px) {
+    margin-top: -100px;
+}
 `;
 
 export const InfoColumn = styled.div`
@@ -171,4 +177,98 @@ flex-basis: 100%;
     margin-top: 105px;
     margin-bottom: -300px;
 } */
+`;
+
+export const ProjectRow = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+margin-top: -180px;
+
+@media screen and (max-width: 768px) {
+    max-width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+`;
+
+export const ProjectOne = styled.div`
+display: grid;
+`;
+
+export const ProjectImg = styled.img`
+padding: 0;
+border: 0;
+max-width: 100%;
+display: inline-block;
+position: relative;
+max-height: 100%;
+transition: 0.5s ease;
+left: -50px;
+
+&:hover {
+        transform: scale(1.05);
+    }
+
+@media screen and (max-width: 768px) {
+    max-width: 430px;
+    max-height: 430px;
+    margin-left: 100px;
+}
+`
+
+export const ProjectHeading = styled.div`
+margin-bottom: 24px;
+font-size: 48px;
+line-height: 1.1;
+text-align: left;
+margin-top: -50px;
+color: ${({ lightText }) => (lightText ? '#1f1f1e' : '$1c2237')};
+
+@media screen and (max-width: 768px) {
+    text-align: left;
+    padding-top: 20px;
+    max-width: 70%;
+    margin-left: 85px;
+}
+`
+
+export const ProjectSubtitle = styled.p`
+margin-bottom: 35px;
+font-size: 18px;
+line-height: 24px;
+text-align: left;
+color: ${({ lightTextDesc }) => (lightTextDesc ? '#a9b3c1' : '$1c2237')};
+
+@media screen and (max-width: 768px) {
+    max-width: 70%;
+    margin-left: 85px;
+}
+`;
+
+export const ProjectLink = styled.div`
+margin-bottom: 35px;
+font-size: 18px;
+line-height: 24px;
+text-align: left;
+cursor: pointer;
+
+&:hover {
+        border-bottom: 2px solid #7B9B82;
+        width: 100px;
+
+}
+
+@media screen and (max-width: 768px) {
+    max-width: 70%;
+    margin-left: 85px;
+
+
+    &:hover {
+            border-bottom: 2px solid #7B9B82;
+            width: 100px;
+
+    }
+}
 `;

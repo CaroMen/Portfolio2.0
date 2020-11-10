@@ -1,4 +1,3 @@
-
 export const homeObjOne = {
     lightBg: false,
     imgStart: '',
@@ -9,7 +8,7 @@ export const homeObjOne = {
     lightText: true,
     topLine: 'Caroline Méndez.',
     img: require('../../images/girl.svg'),
-    alt: 'Image',
+    // alt: 'Image',
     start: '',
 };
 
@@ -24,13 +23,13 @@ export const homeObjTwo = {
     lightText: false,
     headline: 'Get to know me!',
     img: require('../../images/grad.svg'),
-    alt: 'Image',
+    // alt: 'Image',
     start: 'start',
 };
 
 export const homeObjThree = {
     lightBg: false,
-    imgStart: '',
+    // imgStart: '',
     lightTopLine: true,
     lightTextDesc: true,
     // pTwo: "",
@@ -47,4 +46,13 @@ export const homeObjThree = {
     skillSix: 'Styled Components',
     skillSeven: 'Git',
     skillEight: 'SQL',
+};
+
+export const homeObjFour = {
+    projectImg: require('../../images/mbf.png'),
+    projectHeadline: 'Modern By Francis',
+    projectDescription: 'An e-commerce application built with Gatsby JS, Graphql, and Shopify Buy SDK for a furniture company.',
+    projectLink: 'View Project',
+    lightText: true,
+
 };

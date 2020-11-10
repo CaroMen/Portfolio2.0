@@ -1,9 +1,18 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
-import { InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img, SkillsList, TextWrapperOne, InfoColumnSkills, SkillColumnOne, SubtitleSkills } from './InfoSection.elements';
+import {
+    InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle,
+    ImgWrapper, Img, SkillsList, TextWrapperOne, InfoColumnSkills, SkillColumnOne,
+    ProjectRow, ProjectOne, ProjectImg, ProjectHeading, ProjectSubtitle, ProjectLink,
+    ArrowIcon
+} from './InfoSection.elements';
 
-const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc, description, headline, lightText, topLine, img, alt, start, pTwo, pThree, skills, skillOne, skillTwo, skillThree, skillFour, skillFive, skillSix, skillSeven, skillEight }) => {
+const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc,
+    description, headline, lightText, topLine, img, alt, start, pTwo,
+    pThree, skillOne, skillTwo, skillThree, skillFour, skillFive,
+    skillSix, skillSeven, skillEight, projectImg, projectDescription,
+    projectHeadline, projectLink }) => {
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -41,7 +50,16 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc, descripti
                                 </SkillColumnOne>
                             </TextWrapperOne>
                         </InfoColumnSkills>
+                        <ProjectRow>
+                            <ProjectOne>
+                                <ProjectImg src={projectImg} alt={alt} />
+                                <ProjectHeading lightText={lightText}>{projectHeadline}</ProjectHeading>
+                                <ProjectSubtitle lightTextDesc={lightText}>{projectDescription}</ProjectSubtitle>
+                                <ProjectLink to="/modernbyfrancis">{projectLink}</ProjectLink>
+                            </ProjectOne>
+                        </ProjectRow>
                     </InfoRow>
+
                 </Container>
             </InfoSec>
         </>
