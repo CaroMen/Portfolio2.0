@@ -7,7 +7,7 @@ export const homeObjOne = {
     headline: 'Software Developer, Business Student, and Intern at Baylor.',
     lightText: true,
     topLine: 'Caroline Méndez.',
-    img: require('../../images/girl.svg'),
+    img: require('../../images/pfp.JPG'),
     // alt: 'Image',
     start: '',
 };
@@ -22,7 +22,7 @@ export const homeObjTwo = {
     pThree: "In the past two years, I've worked on projects that have challenged me, put me out of my comfort zone, and helped me become a better developer. I've had the opportunity to work on projects that were not only fun, but useful and helpful.",
     lightText: false,
     headline: 'Get to know me!',
-    img: require('../../images/grad.svg'),
+    img: require('../../images/grad.JPG'),
     // alt: 'Image',
     start: 'start',
 };
