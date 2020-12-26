@@ -1,11 +1,11 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from '../../globalStyles';
 import {
     InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle,
     ImgWrapper, Img, SkillsList, TextWrapperOne, InfoColumnSkills, SkillColumnOne,
-    ProjectRow, ProjectOne, ProjectImg, ProjectHeading, ProjectSubtitle, ProjectLink,
-    ArrowIcon
+    ProjectRow, ProjectOne, ProjectImg, ProjectHeading, ProjectSubtitle, ProjectLink, 
+    LinkToProject,
 } from './InfoSection.elements';
 
 const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc,
@@ -13,6 +13,11 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc,
     pThree, skillOne, skillTwo, skillThree, skillFour, skillFive,
     skillSix, skillSeven, skillEight, projectImg, projectDescription,
     projectHeadline, projectLink }) => {
+
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+
     return (
         <>
             <InfoSec lightBg={lightBg}>
@@ -55,7 +60,9 @@ const InfoSection = ({ lightBg, imgStart, lightTopLine, lightTextDesc,
                                 <ProjectImg src={projectImg} alt={alt} />
                                 <ProjectHeading lightText={lightText}>{projectHeadline}</ProjectHeading>
                                 <ProjectSubtitle lightTextDesc={lightText}>{projectDescription}</ProjectSubtitle>
-                                <ProjectLink to="/modernbyfrancis">{projectLink}</ProjectLink>
+                                <ProjectLink>
+                                    <Link style={{ textDecoration: 'none', color: 'inherit' }} to="/modernbyfrancis">{projectLink}</Link>
+                                </ProjectLink>
                             </ProjectOne>
                         </ProjectRow>
                     </InfoRow>

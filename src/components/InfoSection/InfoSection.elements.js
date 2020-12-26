@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 import { DiPython, DiJavascript1 } from 'react-icons/di';
-import { MdKeyboardArrowRight } from "react-icons/md";
-
-// import { Link } from 'react-router-dom';
 
 export const InfoSec = styled.div`
 color: #101522;
@@ -254,6 +251,7 @@ font-size: 18px;
 line-height: 24px;
 text-align: left;
 cursor: pointer;
+text-decoration: none;
 
 &:hover {
         border-bottom: 2px solid #7B9B82;

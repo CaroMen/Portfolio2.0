@@ -41,7 +41,7 @@ const Navbar = () => {
                             <NavItem>
                                 <NavLinks to='/'>
                                     Home
-                                </NavLinks>
+                                </NavLinks> 
                             </NavItem>
                             <NavItem>
                                 <NavLinks to='/services'>
