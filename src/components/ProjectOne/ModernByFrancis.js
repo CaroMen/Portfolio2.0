@@ -1,13 +1,14 @@
 import React from 'react';
 
 import { Container } from '../../globalStyles';
-import {ProjectOneTitle} from '../ProjectOne/ModernBF.elements';
+import {ProjectOneTitle, ProjectDesc} from '../ProjectOne/ModernBF.elements';
 
-const ModernByFrancis = ({titleOne}) => {
+const ModernByFrancis = ({titleOne, projectDesc}) => {
     return (
         <>
             <Container>
                 <ProjectOneTitle>{titleOne}</ProjectOneTitle>
+                <ProjectDesc>{projectDesc}</ProjectDesc>
             </Container>
             
         </>
